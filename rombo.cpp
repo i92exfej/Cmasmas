@@ -13,7 +13,7 @@ int main(){
 	cin >> n;
 
 	medio = (n / 2.0) + 0.5;
-	nEspacios = (n / 2.0) - 0.5
+	nEspacios = (n / 2.0) - 0.5;
 
 
 // i < n/2 + 0.5
@@ -72,5 +72,5 @@ int main(){
 
 	}
 
-	return 0
+	return 0;
 }
