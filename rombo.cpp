@@ -9,8 +9,9 @@ int main(){
 	int nEspacios = 0;
 	int nEspaciosDentro = -1;
 
-	cout << " Introduzca numero inpar: "<<endl;
+	cout << " Introduzca numero impar: " << endl;
 	cin >> n;
+	cout << endl; 
 
 	medio = (n / 2.0) + 0.5;
 	nEspacios = (n / 2.0) - 0.5;
@@ -19,7 +20,7 @@ int main(){
 // i < n/2 + 0.5
 	for(int i = 1; i < medio; i++){
 
-		for(int j = 0; i < nEspacios; i++){
+		for(int j = 0; j < nEspacios; j++){
 			cout << " ";
 				}
 
@@ -27,7 +28,7 @@ int main(){
 			cout << "*";
 		}
 
-		for(int k = 0; i < nEspaciosDentro; i++){
+		for(int k = 0; k < nEspaciosDentro; k++){
 			cout << " ";
 		}
 
@@ -38,11 +39,12 @@ int main(){
 		nEspaciosDentro+=2 ;
 
 	}
+
 // i = n/2 + 0.5
 
 	cout << "*";
 
-	for(i = 0; i < n - 2; i++){
+	for(int i = 0; i < n - 2; i++){
 		cout << ' ';
 	}
 
@@ -50,17 +52,21 @@ int main(){
 
 
 // i > n/2 + 0.5
+
+	nEspacios = 1;
+	nEspaciosDentro-=2;
+
 	for(int i = medio; i < n; i++){
 
-		for(int j = 0; i < nEspacios; i++){
+		for(int j = 0; j < nEspacios; j++){
 			cout << " ";
 				}
 
-		if(i != 1){
+		if(i != n-1){
 			cout << "*";
 		}
 
-		for(int k = 0; i < nEspaciosDentro; i++){
+		for(int k = 0; k < nEspaciosDentro; k++){
 			cout << " ";
 		}
 
