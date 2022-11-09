@@ -32,8 +32,8 @@ int main(){
 		}
 
 
-		cout << "*";
-
+		cout << "*" << endl;
+		
 		nEspacios-- ;
 		nEspaciosDentro+=2 ;
 
@@ -46,7 +46,7 @@ int main(){
 		cout << ' ';
 	}
 
-	cout << "*";
+	cout << "*" << endl;
 
 
 // i > n/2 + 0.5
@@ -65,7 +65,7 @@ int main(){
 		}
 
 
-		cout << "*";
+		cout << "*" << endl;
 
 		nEspacios++ ;
 		nEspaciosDentro-=2 ;
